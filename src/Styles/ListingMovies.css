@@ -19,7 +19,7 @@
     transition: box-shadow 0.2s ease-in-out;
 }
 
-/* On hover, add a more prominent shadow */
+/* On hover shadow */
 .listing-card:hover {
     box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
 }
@@ -46,16 +46,6 @@
     color: #6b7280; 
 }
 
-/* Guests information */
-.listing-card-guests {
-    color: #374151;
-}
-
-/* Price styling */
-.listing-card-price {
-    font-weight: 700;
-    font-size: 1.125rem;
-}
 
 /* Rating styling */
 .listing-card-rating {

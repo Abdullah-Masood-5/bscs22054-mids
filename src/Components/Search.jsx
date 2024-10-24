@@ -1,4 +1,3 @@
-import { React, useState } from "react";
 import movieData from "../MovieData.js";
 
 function List(props) {

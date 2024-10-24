@@ -7,13 +7,13 @@
 }
 
 .footer.light {
-  --footer-bg: #a29f9f; /* Light theme background */
-  --footer-text-color: #000000; /* Light theme text color */
+  --footer-bg: #a29f9f; 
+  --footer-text-color: #000000; 
 }
 
 .footer.dark {
-  --footer-bg: #07045c; /* Dark theme background */
-  --footer-text-color: #ffffff; /* Dark theme text color */
+  --footer-bg: #07045c; 
+  --footer-text-color: #ffffff; 
 }
 
 .container {
