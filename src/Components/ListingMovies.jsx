@@ -13,9 +13,23 @@ const ListingMovies = ({ listing }) => {
       <div className="listing-card-content">
         <h2 className="listing-card-title">{listing.title}</h2>
         <p className="listing-card-type">{listing.releaseDate}</p>
-        <p className="listing-card-price">${listing.price} / night</p>
         <p className="listing-card-rating">Rating: {listing.rating} ⭐</p>
       </div>
     </div>
   );
 };
+const ListingsGrid = ({ category }) => {
+  const filteredListings = category
+    ? movieData.filter((listing) => listing.category === category)
+    : movieData;
+
+  return (
+    <div className="listings-grid">
+      {filteredListings.map((listing) => (
+        <ListingMovies key={listing.id} listing={listing} />
+      ))}
+    </div>
+  );
+};
+
+export default ListingsGrid;
