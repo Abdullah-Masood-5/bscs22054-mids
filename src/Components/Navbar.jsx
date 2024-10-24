@@ -35,7 +35,7 @@ const Navbar = () => {
       </div>
       <div className="search">
         <input type="text" placeholder="Search..." />
-        <button className= "List" onClick={List}>Search</button>
+        <button className= "list" onClick={List}>Search</button>
       </div>
     </nav>
   );

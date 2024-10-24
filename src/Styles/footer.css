@@ -1,4 +1,4 @@
-/* General footer styling */
+
 .footer {
   background-color: var(--footer-bg);
   color: var(--footer-text-color);
@@ -63,7 +63,6 @@
   color: #f0a500;
 }
 
-/* Footer bottom */
 .footer-bottom {
   text-align: center;
   padding-top: 1rem;

@@ -38,12 +38,12 @@
 }
 
 .theme-toggle,
-.counter {
+.list {
   display: inline-flex;
   align-items: center;
 }
 
-.theme-toggle button {
+.theme-toggle button,.list {
   background-color: #055ebe;
   border: none;
   color: #282c34;
@@ -54,7 +54,7 @@
 }
 
 .theme-toggle button:hover,
-.counter button:hover {
+.list button:hover {
   background-color: #21a1f1;
 }
 
