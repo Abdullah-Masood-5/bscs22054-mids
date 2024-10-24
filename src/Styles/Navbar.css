@@ -1,0 +1,117 @@
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2%;
+    background-color: var(--navbar-bg);
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar.light {
+    --navbar-bg: #a29f9f; /* Light theme background */
+    color: #000000; /* Light theme text color */
+  }
+
+  .navbar.dark {
+    --navbar-bg: #07045c; /* Dark theme background */
+    color: #ffffff; /* Dark theme text color */
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .menu {
+    display: inline-flex;
+    gap: 2rem;
+  }
+
+  .menu.open {
+    display: inline-flex; /* Display when open */
+  }
+
+  .hamburger {
+    display: none; /* Hide hamburger by default */
+    cursor: pointer;
+  }
+
+  .theme-toggle,
+  .counter {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .theme-toggle button,
+  .counter button {
+    background-color: #055ebe; /* Button background */
+    border: none; /* No border */
+    color: #282c34; /* Button text color */
+    padding: 10px 15px;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+
+  .theme-toggle button:hover,
+  .counter button:hover {
+    background-color: #21a1f1; /* Darker shade on hover */
+  }
+
+  .counter {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between counter elements */
+  }
+
+  .counter span {
+    font-size: 1.2rem; /* Increase counter text size */
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .menu {
+      display: none; /* Hide menu items */
+      flex-direction: column; /* Stack menu items vertically */
+      position: absolute;
+      top: 70px; /* Adjust based on navbar height */
+      left: 0;
+      right: 0;
+      background-color: var(--navbar-bg);
+      padding: 1rem 0;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .menu.open {
+      display: inline-flex; /* Show menu items when open */
+    }
+
+    .hamburger {
+      display: inline-flex; /* Show hamburger icon */
+      font-size: 1.5rem; /* Increase the size of the icon */
+    }
+
+    .theme-toggle,
+    .counter {
+      display: none; /* Hide buttons on mobile */
+    }
+  }
+
+  /* Additional Styling for Active Links */
+  .menu a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+
+  .menu a.active {
+    font-weight: bold;
+    color: var(--active-color, #007bff); /* Change active color */
+  }
+
+  .menu a:hover {
+    color: var(--hover-color, #0056b3); /* Change hover color */
+  }
