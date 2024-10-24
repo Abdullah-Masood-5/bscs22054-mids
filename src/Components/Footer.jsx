@@ -24,10 +24,7 @@ const Footer = () => {
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="/about">About Us</Link>
-              </li>
-              <li>
-                <Link to="/contact">Contact</Link>
+                <Link to="/Rating">Ratings</Link>
               </li>
             </ul>
           </div>
@@ -35,7 +32,7 @@ const Footer = () => {
             <h4>Contact Us</h4>
             <p>123 Business Road, City, Country</p>
             <p>Phone: +123 456 7890</p>
-            <p>Email: info@business.com</p>
+            <p>Email: Client@Movie.com</p>
           </div>
         </div>
         <div className="footer-bottom">
