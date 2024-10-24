@@ -5,7 +5,7 @@ function List(props) {
   return (
     <ul>
       {movieData.map((item) => (
-        <li key={item.id}>{item.text}</li>
+          <li key={item.id}>{item.title}</li>
       ))}
     </ul>
   );

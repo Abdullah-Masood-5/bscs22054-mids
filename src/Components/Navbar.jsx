@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { ThemeCounterContext } from "../ThemeContext";
 import { FaBars } from "react-icons/fa"; // hamburger icon
 import "../Styles/Navbar.css";
-import Search from "./Search";
+import List from "./Search";
 
 const Navbar = () => {
   const { theme, toggleTheme } = useContext(ThemeCounterContext);
@@ -26,7 +26,6 @@ const Navbar = () => {
         <NavLink to="/contact" activeClassName="active">
           Contact
         </NavLink>
-        <Search />
       </div>
       <div className="hamburger" onClick={toggleMenu}>
         <FaBars size={24} /> {/* Hamburger icon */}
@@ -36,7 +35,7 @@ const Navbar = () => {
       </div>
       <div className="search">
         <input type="text" placeholder="Search..." />
-        <button>Search</button>
+        <button className= "List" onClick={List}>Search</button>
       </div>
     </nav>
   );
